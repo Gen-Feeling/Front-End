@@ -1,0 +1,163 @@
+.fs-47{
+  font-size: 47px;
+}
+
+.bg {
+  background-color: var(--color-primary);
+}
+
+.text-color1{
+  color:  rgba(63, 5, 110, 0.418);
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+}
+
+.text-color2{
+  color: rgba(45, 3, 80, 0.418);
+}
+
+/* css trecho */
+
+body{
+  margin-top:20px;
+  background:#eee;
+}
+.card {
+  background-color: #fff;
+  border: 0 solid #eee;
+  border-radius: 8px;
+}
+.card {
+  margin-bottom: 30px;
+  -webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.1), -1px 0 2px rgba(0,0,0,0.05);
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.1), -1px 0 2px rgba(0,0,0,0.05);
+}
+
+.card-profile .card-header {
+  height: 9rem;
+  background-size: cover;
+  background-position: center center
+}
+
+.card-profile-img {
+  max-width: 8rem;
+  margin-top: -6rem;
+  margin-bottom: 1rem;
+  border: 3px solid #fff;
+  border-radius: 100%;
+  height: 8rem;
+}
+
+.avatar {
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  border-radius: 50%;
+  display: inline-block;
+  background: #ced4da no-repeat center/cover;
+  position: relative;
+  text-align: center;
+  color: #868e96;
+  font-weight: 600;
+  vertical-align: bottom
+}
+
+.avatar.avatar-md {
+  width: 3rem;
+  height: 3rem
+}
+
+.avatar.avatar-lg {
+  width: 4rem;
+  height: 4rem
+}
+
+.avatar.avatar-xl {
+  width: 5rem;
+  height: 5rem
+}
+
+.avatar.avatar-xxl {
+  width: 7rem;
+  height: 7rem;
+  min-width: 7rem
+}
+
+.card-header:first-child {
+  border-radius: 8px 8px 0 0;
+}
+
+.card-header {
+  padding: 1rem 1.25rem;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.card-header {
+  -webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.05);
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.05);
+}
+
+  .ttt {
+    width: 50px;
+    border-radius: 50%;
+  }
+
+  .mt {
+    position: relative;
+    bottom: auto;
+  }
+
+  .bg-gray {
+    background-color: rgb(231, 231, 231);
+  }
+
+  .radius {
+    border-radius: 12px;
+  }
+
+  .fa-ellipsis-h {
+    font-size: 1.250rem;
+    margin-bottom: 0;
+  }
+
+  .post{
+    color: rgb(0, 0, 0);            
+    font-family: 'Merriweather', serif;
+    background:  #c1bce7f3;
+    backdrop-filter: blur (10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+.font{
+  color:black;
+  font-family: 'Merriweather', serif;
+  width: 400;
+}
+
+.borda{
+  border-radius: 10px;
+}
+
+.bordamodal{
+  border-radius: 20px;
+}
+
+.cancelar{
+  background-color: #d66da0;;
+  color: white;
+}
+
+.enviar{
+  background-color: #98c589;
+  color:white
+}
+
+.white{
+  color: #d66da0;
+  font-weight: 700;
+}
+
+.btnpost{
+  background-color: #e2a3c1 ;
+}

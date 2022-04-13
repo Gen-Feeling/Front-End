@@ -1,0 +1,3 @@
+<app-menu *ngIf="auth.logado() && auth.edit()"></app-menu>
+<router-outlet></router-outlet>
+<app-rodape *ngIf="auth.edit()"></app-rodape>

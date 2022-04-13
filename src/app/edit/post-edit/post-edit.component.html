@@ -1,0 +1,46 @@
+<div class="container mt-5 mb-5">
+
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class=" text-center text-secondary">Atualizar postagem</h1>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-6">
+
+            <div class="form-group">
+                <label for="">Titulo:</label>
+                <input [(ngModel)]="post.title" name="title" type="text" class="form-control"
+                    placeholder="Digite o titulo">
+            </div>
+            <div class="form-group">
+                <label for="">Texto:</label>
+                <textarea [(ngModel)]="post.text" name="text" class="form-control" rows="4"
+                    placeholder="Digite o texto"></textarea>
+            </div>
+            <div>
+                <label for="">Foto</label>
+                <input [(ngModel)]="post.picture" type="text" class="form-control" id="foto"
+                    placeholder="Link da foto (opcional)" name="foto" />
+            </div>
+            <div class="form-group">
+                <label for="">Escolha um tema:</label>
+                <select name="theme" id="theme" [(ngModel)]="idTheme" (change)="findByIdTheme" class="form-control">
+                    <option *ngFor="let item of themeList" value="{{ item.id }}">{{ item.description }}</option>
+                </select>
+
+                <div class="form-group mt-4">
+                  <label class="form-check-label" for="exampleCheck1">Postar como anônimo</label>
+                  <input [(ngModel)]="post.anonymous" type="checkbox" class="form-check-input ml-2 mt-2" id="exampleCheck1">
+                </div>
+
+                <div class="d-flex justify-content-center mt-2">
+                    <button class="btn btn-outline-danger mr-4" routerLink="/home">Cancelar</button>
+                    <button class="btn btn-outline-success" (click)="update()">Atualizar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

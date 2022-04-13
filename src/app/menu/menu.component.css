@@ -1,0 +1,22 @@
+.font{
+    font-family: 'Allura', cursive;
+    margin: 0;
+    font-size: 45px;
+}
+
+.bg-color{
+    background-color: var(--color-purple);
+    ;
+}
+
+.fontex{
+    font-size: 15px;
+}
+
+.fontox {
+    font-size: 20px !important;
+}
+
+.pointer {
+    cursor: pointer !important
+}

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,700&display=swap');
+:root {
+    --color-primary: #C6C2E4;
+    --color-purple: #BAB5DB;
+    --color-green: #A8C59E;
+}
+
+textarea:focus, input:focus, select:focus
+{
+  border-color: rgba(140, 0, 255, 0.25) !important;
+  box-shadow: 0 0 0 0.1rem rgba(140, 0, 255, 0.25) !important;
+}
+
+.font-mariele {
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+}
+
+.font-mariele-b {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+}
+
+

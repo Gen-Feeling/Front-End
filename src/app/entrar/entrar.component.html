@@ -1,0 +1,311 @@
+<body>
+
+
+    <div class="container-fluid bg p-0">
+        <div class="row">
+            <div class="col-md-12 bg-nav">
+                <div class="d-flex justify-content-between mt-2 mb-2">
+                    <h3 class="ml-3">Feeling</h3>
+                    <div class="d-flex align-items-center">
+                        <button data-toggle="modal" data-target="#exampleModal" class="btn entrar mr-3">Entrar</button>
+                        <button type="submit" class="btn cadastrar mr-3" routerLink="/cadastrar">
+                            Cadastrar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content entrarform borda">
+                    <div class="modal-header">
+                        <h5 class="modal-title pink" id="exampleModalLabel">Login</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body ">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">E-mail</label>
+                                <input [(ngModel)]="userLogin.email" type="email" class="form-control borda"
+                                    id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite seu e-mail"
+                                    name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Senha</label>
+                                <input [(ngModel)]="userLogin.password" type="password" class="form-control borda"
+                                    id="exampleInputPassword1" placeholder="Digite sua senha" name="password">
+                            </div>
+                            <div class="form-group form-check">
+
+
+                            </div>
+                            <button type="submit" class="btn enviar borda" (click)="enter()"
+                                data-dismiss="modal">Enviar</button>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <p>Não tem conta? <a href="/cadastrar" class="cadastrese"> Cadastre-se</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12 teste">
+                <img src="https://imgur.com/FwWXuzK.png" class="tam w-100" alt="Logo Principal Feeling">
+            </div>
+        </div>
+        <div class="row bg-nav">
+            <div class="col-md-12 d-flex justify-content-center">
+                <nav class="nav font">
+                    <a class="nav-link active text-nav mr-5" href="#projeto">Projeto</a>
+                    <a class="nav-link text-nav mr-5" href="#img-bg">Feeling</a>
+                    <a class="nav-link text-nav mr-5" href="#colaboradores">Colaboradores</a>
+                    <a class="nav-link text-nav" href="#contato">Contato</a>
+                </nav>
+            </div>
+        </div>
+        <div class="row" id="projeto">
+            <div class="col-md-6">
+                <img class="w-100 h-95 mt-5" src="https://imgur.com/OufYOU1.png" alt="PNG pessoa burnout">
+            </div>
+            <div class="col-md-6 mt-5">
+                <h2 class="text-center fontb">ODS 3</h2>
+                <h4 class="text-center font"> Com base na ODS 3, da ONU, cuja intenção é assegurar uma vida saudável e
+                    promover o bem-estar para todos, em todas as idades, desenvolvemos a Feeling, uma rede social, que
+                    visa o bem estar de seus usuários.
+                    Nosso publico alvo são pessoas com transtornos psicológicos, burnout, boderline, depressão entre
+                    outros, publico esse, que precisa de um ambiente estavel, seguro e acolhedor, onde possam expressar
+                    seus pensamentos, mentalidades, idéias, angustias e medos, tendo apoio de agentes de saude,
+                    psicologos, assistentes sociais e médicos.
+                    Feeling vai muito alem de uma rede social, é uma comunidade onde as pessoas podem se sentir seguras
+                    e trabalharem as questões necessárias para que voltem a ter uma saude mental de qualidade,
+                    equilibrada e principalmente, se sentirem bem consigo mesmas.
+                </h4>
+            </div>
+        </div>
+
+        <div class="row d-flex align-items-center" id="img-bg">
+            <div class="col-md-12">
+                <h3 id="felling" class="text-center mt-3">O que é a Feeling?</h3>
+                <div class="col-md-12 d-flex justify-content-center">
+
+
+                    <div class="col-md-6 ">
+                        <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis fugit
+                            praesentium incidunt alias ad, a, iste unde veniam inventore non eaque at perferendis, saepe
+                            maxime provident accusantium optio et perspiciatis.</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="row bg pb-5" id="colaboradores">
+            <div class="col-md-12 p-0">
+                <h2 class="text-center sobre m-0">Colaboradores</h2>
+            </div>
+        </div>
+
+        <div class="row bg">
+            <div class="col-md-12 d-flex justify-content-around">
+                <div class="col-md-3">
+                    <div class="d-flex justify-content-center">
+                        <img class="perfil d-flex justify-content-center" src="../../assets/char/nalu.jpeg" alt="">
+                    </div>
+                    <h3 class="text-center">Ana Luiza Lamas de Andrade</h3>
+                    <h4 class="text-center fontb">Entre em contato</h4>
+                    <div class="col-md-12 d-flex justify-content-center">
+                        <ul class="social-media m-0 list-unstyled">
+
+                            <li>
+                                <a href="https://github.com/nalulamas" target="_blank" class="iconGit">
+                                    <i class="fa fa-github-square icones fa-3x" fa-3x aria-hidden="true"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/analuizalamas/" target="_blank" class="iconLink">
+                                    <i class="fa fa-linkedin-square fa-3x" fa-3x aria-hidden="true"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-flex justify-content-center">
+                        <img class="perfil d-flex justify-content-center" src="../../assets/char/caique.jpeg" alt="">
+                    </div>
+                    <h3 class="text-center">Caique Rodrigues da Silva</h3>
+                    <h4 class="text-center fontb">Entre em contato</h4>
+                    <div class="col-md-12 d-flex justify-content-center">
+                        <ul class="social-media m-0 list-unstyled">
+
+                            <li>
+                                <a href="https://github.com/daawch" target="_blank" class="iconGit">
+                                    <i class="fa fa-github-square icones fa-3x" fa-3x aria-hidden="true"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/caique-rodrigues-da-silva-6ba002231/"
+                                    target="_blank" class="iconLink">
+                                    <i class="fa fa-linkedin-square fa-3x" fa-3x aria-hidden="true"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-flex justify-content-center">
+                        <img class="perfil d-flex justify-content-center" src="../../assets/char/gabs.jpeg" alt="">
+                    </div>
+                    <h3 class="text-center">Gabriela Federmann </h3>
+                    <br>
+                    <br>
+                    <h4 class="text-center fontb">Entre em contato</h4>
+                    <div class="col-md-12 d-flex justify-content-center">
+                        <ul class="social-media m-0 list-unstyled">
+
+                            <li>
+                                <a href="https://github.com/GabrielaFedermann" target="_blank" class="iconGit">
+                                    <i class="fa fa-github-square icones fa-3x" fa-3x aria-hidden="true"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/gabriela-federmann-566691a6/" target="_blank"
+                                    class="iconLink">
+                                    <i class="fa fa-linkedin-square fa-3x" fa-3x aria-hidden="true"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row bg">
+        <div class="col-md-12 d-flex justify-content-around">
+            <div class="col-md-3">
+                <div class="d-flex justify-content-center">
+                    <img class="perfil d-flex justify-content-center" src="../../assets/char/henrique.jpeg" alt="">
+                </div>
+                <h3 class="text-center">Henrique da Silva Mendes</h3>
+                <h4 class="text-center fontb">Entre em contato</h4>
+                <div class="col-md-12 d-flex justify-content-center">
+                    <ul class="social-media m-0 list-unstyled">
+
+                        <li>
+                            <a href="https://github.com/RiqueMendes" target="_blank" class="iconGit">
+                                <i class="fa fa-github-square icones fa-3x" fa-3x aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/henrique-mendes-610b521aa/" target="_blank"
+                                class="iconLink">
+                                <i class="fa fa-linkedin-square fa-3x" fa-3x aria-hidden="true"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="d-flex justify-content-center">
+                    <img class="perfil d-flex justify-content-center" src="../../assets/char/malu.jpeg" alt="">
+                </div>
+                <h3 class="text-center">María Luiza Filinto Silva</h3>
+                <h4 class="text-center fontb">Entre em contato</h4>
+                <div class="col-md-12 d-flex justify-content-center">
+                    <ul class="social-media m-0 list-unstyled">
+
+                        <li>
+                            <a href="https://github.com/malufilinto" target="_blank" class="iconGit">
+                                <i class="fa fa-github-square icones fa-3x" fa-3x aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/malufilinto/" target="_blank" class="iconLink">
+                                <i class="fa fa-linkedin-square fa-3x" fa-3x aria-hidden="true"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="d-flex justify-content-center">
+                    <img class="perfil d-flex justify-content-center" src="https://picrew.me/shareImg/org/202204/114808_9czjKaDs.png" alt="">
+                </div>
+                <h3 class="text-center">Samuel Mathias Barbosa Santos</h3>
+                <h4 class="text-center fontb">Entre em contato</h4>
+                <div class="col-md-12 d-flex justify-content-center">
+                    <ul class="social-media m-0 list-unstyled">
+
+                        <li>
+                            <a href="https://github.com/samuelsaturn" target="_blank" class="iconGit">
+                                <i class="fa fa-github-square icones fa-3x" fa-3x aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/samuel-mathias-7480a7212/" target="_blank"
+                                class="iconLink">
+                                <i class="fa fa-linkedin-square fa-3x" fa-3x aria-hidden="true"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="d-flex justify-content-center">
+                    <img class="perfil d-flex justify-content-center" src="../../assets/char/vitor.jpeg" alt="">
+                </div>
+                <h3 class="text-center">Vítor Pinheiro Melo</h3><br>
+                <br>
+                <h4 class="text-center fontb">Entre em contato</h4>
+                <div class="col-md-12 d-flex justify-content-center">
+                    <ul class="social-media m-0 list-unstyled">
+
+                        <li>
+                            <a href="https://github.com/vitor-pm" target="_blank" class="iconGit">
+                                <i class="fa fa-github-square icones fa-3x" fa-3x aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/vitor-pin/" target="_blank" class="iconLink">
+                                <i class="fa fa-linkedin-square fa-3x" fa-3x aria-hidden="true"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-dark p-0">
+        <div class="container mt-5 pb-5 pt-5" id="contato">
+            <div class="row bg-form">
+                <div class="col-md-12 p-4">
+                    <h2 class="text-center fontb">Entre em contato com a gente!</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Nome</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">E-mail</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group form-check p-0">
+                            <div>
+                                <textarea placeholder="Digite aqui o assunto" class="form-control mt-4" name="assunto"
+                                    id="assunto" cols="30" rows="7"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn enviarc mb-3" (click)="sendEmail()">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>

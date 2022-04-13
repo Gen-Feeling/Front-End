@@ -1,0 +1,29 @@
+.bg-purple {
+  background-color: #bab5db;
+}
+
+.bg-theme {
+  background-color: #9288d35d;
+  border-radius: 50px;
+}
+
+.bg-topic {
+  background-color: #9288d35d;
+}
+
+.btn-cdt {
+  background-color: #e2a3c1;
+  width: 130px;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+}
+
+.ft-color{
+  color: #100e1d ;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.ft-color-h3{
+  color: #2d2850 ;
+}

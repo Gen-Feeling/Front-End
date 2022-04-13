@@ -1,0 +1,27 @@
+#img-bg {
+  background-image: url(https://us.123rf.com/450wm/katiaj/katiaj1401/katiaj140100098/25611445-lilac-background-watercolor-paper-texture.jpg?ver=6);
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .bg {
+    background-color: rgba(242, 234, 243, 0.479);
+    border-radius: 16px;
+    padding: 3rem;
+  }
+  
+  .mt {
+    margin-top: 2rem;
+  }
+  
+  .font{
+    font-family: 'Merriweather', serif;
+    font-weight: 400;}
+
+    .border{
+      border-radius: 18px;
+    }
+
+    
