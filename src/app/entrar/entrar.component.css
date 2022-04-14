@@ -175,7 +175,14 @@ ul.social-media li {
 .fa-linkedin-square:hover {
     color: #0e76a8
 }
+.sizeImg{
+    width: 150px;
+}
 
+.size-names{
+    font-size: 40px;
+    font-weight: bold;
+}
 .font {
     font-family: 'Merriweather', serif;}
 
@@ -186,3 +193,5 @@ ul.social-media li {
     .ftext{
         margin-left: 50px;
     }
+
+    

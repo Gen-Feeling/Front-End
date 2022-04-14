@@ -51,7 +51,13 @@ export class EntrarComponent implements OnInit {
   }
 
   sendEmail(){
-    this.email.sendEmail()
+    this.email.sendEmail(this.emailModel).subscribe((resp)=>{
+      if(resp==='Mensagem enviada com sucesso!'){
+        console.log('Deu certo!')
+      }else {
+        console.log('Deu ruim!'+resp)
+      }
+    })
   }
 
 }

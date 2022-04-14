@@ -117,7 +117,7 @@
             <div class="col-md-12 d-flex justify-content-around">
                 <div class="col-md-3">
                     <div class="d-flex justify-content-center">
-                        <img class="perfil d-flex justify-content-center" src="../../assets/char/nalu.jpeg" alt="">
+                        <img class="perfil d-flex justify-content-center" src="../../assets/char/nalu.png" alt="">
                     </div>
                     <h3 class="text-center">Ana Luiza Lamas de Andrade</h3>
                     <h4 class="text-center fontb">Entre em contato</h4>
@@ -138,7 +138,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="d-flex justify-content-center">
-                        <img class="perfil d-flex justify-content-center" src="../../assets/char/caique.jpeg" alt="">
+                        <img class="perfil d-flex justify-content-center" src="../../assets/char/caique.png" alt="">
                     </div>
                     <h3 class="text-center">Caique Rodrigues da Silva</h3>
                     <h4 class="text-center fontb">Entre em contato</h4>
@@ -160,7 +160,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="d-flex justify-content-center">
-                        <img class="perfil d-flex justify-content-center" src="../../assets/char/gabs.jpeg" alt="">
+                        <img class="perfil d-flex justify-content-center" src="../../assets/char/gabs.png" alt="">
                     </div>
                     <h3 class="text-center">Gabriela Federmann </h3>
                     <br>
@@ -190,7 +190,7 @@
         <div class="col-md-12 d-flex justify-content-around">
             <div class="col-md-3">
                 <div class="d-flex justify-content-center">
-                    <img class="perfil d-flex justify-content-center" src="../../assets/char/henrique.jpeg" alt="">
+                    <img class="perfil d-flex justify-content-center" src="../../assets/char/henrique.png" alt="">
                 </div>
                 <h3 class="text-center">Henrique da Silva Mendes</h3>
                 <h4 class="text-center fontb">Entre em contato</h4>
@@ -212,7 +212,7 @@
             </div>
             <div class="col-md-3">
                 <div class="d-flex justify-content-center">
-                    <img class="perfil d-flex justify-content-center" src="../../assets/char/malu.jpeg" alt="">
+                    <img class="perfil d-flex justify-content-center" src="../../assets/char/malu.png" alt="">
                 </div>
                 <h3 class="text-center">María Luiza Filinto Silva</h3>
                 <h4 class="text-center fontb">Entre em contato</h4>
@@ -233,7 +233,7 @@
             </div>
             <div class="col-md-3">
                 <div class="d-flex justify-content-center">
-                    <img class="perfil d-flex justify-content-center" src="https://picrew.me/shareImg/org/202204/114808_9czjKaDs.png" alt="">
+                    <img class="perfil d-flex justify-content-center" src="../../assets/char/Samuel.png" alt="">
                 </div>
                 <h3 class="text-center">Samuel Mathias Barbosa Santos</h3>
                 <h4 class="text-center fontb">Entre em contato</h4>
@@ -255,7 +255,7 @@
             </div>
             <div class="col-md-3">
                 <div class="d-flex justify-content-center">
-                    <img class="perfil d-flex justify-content-center" src="../../assets/char/vitor.jpeg" alt="">
+                    <img class="perfil d-flex justify-content-center" src="../../assets/char/vitor.png" alt="">
                 </div>
                 <h3 class="text-center">Vítor Pinheiro Melo</h3><br>
                 <br>
@@ -278,28 +278,30 @@
         </div>
     </div>
 
-    <div class="container-fluid bg-dark p-0">
-        <div class="container mt-5 pb-5 pt-5" id="contato">
+    <h2 class="text-center sobre m-0">Contato</h2>
+    <div class="container-fluid bg-color2 p-0">
+        <div class="container  pb-5 pt-5" id="contato">
             <div class="row bg-form">
                 <div class="col-md-12 p-4">
-                    <h2 class="text-center fontb">Entre em contato com a gente!</h2>
+                    <h2 class="text-center fontb">Entre em contato conosco!</h2>
+                    
                     <form>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Nome</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
+                            <label for="exampleInputNome">Nome</label>
+                            <input [(ngModel)]="emailModel.name" type="texto" class="form-control" id="exampleInputNome"
                                 aria-describedby="emailHelp">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">E-mail</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
+                            <label for="exampleInputEmail1">E-mail</label>
+                            <input [(ngModel)]="emailModel.email" type="email" class="form-control" id="exampleInputEmail1">
                         </div>
                         <div class="form-group form-check p-0">
                             <div>
-                                <textarea placeholder="Digite aqui o assunto" class="form-control mt-4" name="assunto"
+                                <textarea [(ngModel)]="emailModel.msg" placeholder="Digite a mensagem" class="form-control mt-4" name="assunto"
                                     id="assunto" cols="30" rows="7"></textarea>
                             </div>
                         </div>
-                        <button type="submit" class="btn enviarc mb-3" (click)="sendEmail()">Enviar</button>
+                        <button type="submit" class="btn enviarc mb-3"(click)="sendEmail()">Enviar</button>
                     </form>
                 </div>
             </div>
