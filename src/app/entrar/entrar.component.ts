@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
+import { Email } from '../model/Email';
 import { UserLoginDTO } from '../model/UserLoginDTO';
 import { AlertsService } from '../service/alerts.service';
 import { AuthService } from '../service/auth.service';
@@ -14,6 +15,7 @@ import { EmailService } from '../service/email.service';
 export class EntrarComponent implements OnInit {
 
   userLogin: UserLoginDTO = new UserLoginDTO()
+  emailModel: Email = new Email()
 
   constructor(
     private auth: AuthService,
