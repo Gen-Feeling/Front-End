@@ -1,13 +1,10 @@
 #img-bg {
-  background-image: url(https://us.123rf.com/450wm/katiaj/katiaj1401/katiaj140100098/25611445-lilac-background-watercolor-paper-texture.jpg?ver=6);
+  background-image: linear-gradient(#d3d0ebbd, #BAB5DB);
     min-height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
   
   .bg {
-    background-color: rgba(242, 234, 243, 0.479);
+    background-color: rgba(242, 234, 243, 0.322);
     border-radius: 16px;
     padding: 3rem;
   }
@@ -20,8 +17,18 @@
     font-family: 'Merriweather', serif;
     font-weight: 400;}
 
-    .border{
+    .borda{
       border-radius: 18px;
     }
 
-    
+    .enviar {
+      background-color: #98c589;
+      color: white;
+      width: 100px;
+  }
+  
+  .cancelar {
+      background-color: #d66da0;
+      color: white;
+      width: 100px;
+  }

@@ -3,20 +3,20 @@
     <div class="col-md-6 mt-5 mb-5">
       <div class="row d-flex justify-content-center">
         <div class="col-md-11 bg border">
-          <h1 class="text-center">Cadastre-se</h1>
+          <h1 class="text-center font">Cadastre-se</h1>
 
           <form>
             <div class="form-group font">
 
               <label for="nome">Nome</label>
-              <input [(ngModel)]="user.name" class="form-control font border" type="text" name="nome" id="nome"
+              <input [(ngModel)]="user.name" class="form-control font borda" type="text" name="nome" id="nome"
                 placeholder="Seu nome (min. 3 max. 30)" maxlength="30">
             </div>
 
             <div class="form-group font">
 
               <label for="usuario">Email</label>
-              <input [(ngModel)]="user.email" (input)="validEmail()" class="form-control font border" type="text"
+              <input [(ngModel)]="user.email" (input)="validEmail()" class="form-control font borda" type="text"
                 name="usuario" id="usuario" placeholder="Seu E-mail" (input)="validEmail()">
               <div id="txtUser"></div>
             </div>
@@ -25,27 +25,27 @@
             <div class="form-group font">
 
               <label for="senha">Senha</label>
-              <input (input)="confirmPassword($event)" (input)="validPassword()" class="form-control font border"
+              <input (input)="confirmPassword($event)" (input)="validPassword()" class="form-control font borda"
                 type="password" name="senha" id="senha" placeholder="Sua senha (min. 6 max. 20)" maxlength="20">
               <div id="txtPassword"></div>
             </div>
             <div class="form-group font">
 
               <label for="confirmSenha">Confirmar senha</label>
-              <input [(ngModel)]="user.password" (input)="validPass()" class="form-control font border" type="password" name="confirmSenha"
+              <input [(ngModel)]="user.password" (input)="validPass()" class="form-control font borda" type="password" name="confirmSenha"
                 id="confirmSenha" placeholder="Confirme sua senha" maxlength="20">
               <div id="txtPass"></div>
             </div>
             <div class="form-group font">
 
               <label for="foto">Link da foto</label>
-              <input [(ngModel)]="user.photo" class="form-control font border" type="text" name="foto" id="foto"
+              <input [(ngModel)]="user.photo" class="form-control font borda" type="text" name="foto" id="foto"
                 placeholder="Link da sua foto" placeholder="Foto Opcional">
             </div>
             <div class="form-group font">
 
               <label for="tipo">Tipo de usuário </label>
-              <select class='form-control font border' name="tipo" id="tipo">
+              <select class='form-control font borda' name="tipo" id="tipo">
                 <option> Selecione um tipo de usuário: </option>
                 <option value="normal">Normal</option>
                 <option value="adm">Administrador</option>
@@ -53,9 +53,9 @@
 
             </div>
             <hr>
-            <div class="d-flex justify-content-center font boder">
-              <a routerLink="/entrar"><button type="submit" class="btn btn-danger mr-4">Cancelar</button></a>
-              <button type="submit" class="btn btn-success" (click)="register()">Cadastrar</button>
+            <div class="d-flex justify-content-center font ">
+              <a routerLink="/entrar"><button type="submit" class="btn cancelar mr-4">Cancelar</button></a>
+              <button type="submit" class="btn enviar" (click)="register()">Cadastrar</button>
             </div>
           </form>
         </div>

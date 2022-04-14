@@ -3,7 +3,7 @@ body {
 }
 
 #img-bg {
-    background-image: url(https://imgur.com/Yxs8emE.png);
+    background-image: url(https://i.ibb.co/L8bJscb/Whats-App-Image-2022-04-13-at-21-32-19.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -14,7 +14,7 @@ body {
 h3 {
     font-family: 'Allura', cursive;
     margin: 0;
-    font-size: 45px;
+    font-size: 60px;
 }
 
 .borda {
@@ -30,7 +30,7 @@ h3 {
 }
 
 .bg-nav {
-background-color: var(--color-purple);
+    background-color: #C6C2E4;
 }
 
 .text-nav {
@@ -59,67 +59,70 @@ background-color: var(--color-purple);
     border-radius: 16px;
 }
 
-.entrar{
-    background-color:#e2a3c1;
+.entrar {
+    background-color: #e2a3c1;
     width: 130px;
     font-family: 'Merriweather', serif;
     font-weight: 700;
+    border-radius: 10px;
 }
 
-.cadastrar{
+.cadastrar {
     width: 130px;
-    border: 1px solid  #ec68a8;
+    border: 1px solid #ec68a8;
     font-family: 'Merriweather', serif;
     font-weight: 400;
+    border-radius: 10px;
+
 }
 
-.font{
+.font {
     font-family: 'Merriweather', serif;
     padding: 15px;
 }
 
-.fontb{
+.fontb {
     font-family: 'Merriweather', serif;
     font-weight: 700;
 }
 
-.enviarc{
-    background-color:#a037a065;
+.enviarc {
+    background-color: #a037a065;
     width: 130px;
     font-family: 'Merriweather', serif;
     font-weight: 700;
 }
 
-.entrarform{
+.entrarform {
     color: rgb(255, 255, 255);
     font-family: 'Merriweather', serif;
-    background:  #bab5dbcb;
+    background: #bab5dbcb;
     backdrop-filter: blur (10px);
     -webkit-backdrop-filter: blur(10px);
 }
 
-.enviar{
+.enviar {
     color: black;
     width: 130px;
     font-family: 'Merriweather', serif;
     font-weight: 400;
-    border: 1px solid  #ec68a8;
-    background-color: #e2a3c1 ;
+    border: 1px solid #ec68a8;
+    background-color: #e2a3c1;
 }
 
-.cadastrese{
+.cadastrese {
     color: black;
     font-family: 'Merriweather', serif;
     font-weight: 400;
 }
 
-.font{
-    color:black;
+.font {
+    color: black;
     font-family: 'Merriweather', serif;
     width: 700;
 }
 
-.borda{
+.borda {
     border-radius: 10px;
 }
 
@@ -134,44 +137,52 @@ background-color: var(--color-purple);
 .fa-github-square:hover {
     color: #596275;
 }
+
 .fa-linkedin-square:hover {
     color: #0e76a8
 }
 
-.bg-color{
-  background-color: var(--color-purple);
+.bg-color {
+    background-color: var(--color-purple);
 }
 
-ul.social-media{
-  list-style: none;
-  padding: 0%;
+ul.social-media {
+    list-style: none;
+    padding: 0%;
 }
 
-ul.social-media li{
-  display: inline;
-  margin: 0%;
-  padding: 5px;
+ul.social-media li {
+    display: inline;
+    margin: 0%;
+    padding: 5px;
 
 }
 
-.fa{
-  font-size: 35pt;
-  color: rgb(49, 49, 49);
-  padding: 10px;
+.fa {
+    font-size: 35pt;
+    color: rgb(49, 49, 49);
+    padding: 10px;
 }
 
-.fa-github-square:hover{
-  color: #596275
+.fa-github-square:hover {
+    color: #596275
 }
 
-.fa-instagram:hover{
-  color: #C13584
+.fa-instagram:hover {
+    color: #C13584
 }
 
-.fa-linkedin-square:hover{
-  color: #0e76a8
+.fa-linkedin-square:hover {
+    color: #0e76a8
 }
 
-.font{
-  font-family: 'Merriweather', serif;
-}
+.font {
+    font-family: 'Merriweather', serif;}
+
+    .navdois{
+        background-color: var(--color-purple);
+    }
+
+    .ftext{
+        margin-left: 50px;
+    }

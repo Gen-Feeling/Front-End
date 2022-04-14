@@ -137,6 +137,7 @@ body{
 
 .borda{
   border-radius: 10px;
+  border-style: none;
 }
 
 .bordamodal{
@@ -153,6 +154,19 @@ body{
   color:white
 }
 
+.deletar{
+  background-color: #d66da0;;
+  color: white;
+  width: 100px;
+
+}
+
+.editar{
+  background-color: #98c589;
+  color:white;
+  width: 100px;
+}
+
 .white{
   color: #d66da0;
   font-weight: 700;
@@ -161,3 +175,4 @@ body{
 .btnpost{
   background-color: #e2a3c1 ;
 }
+

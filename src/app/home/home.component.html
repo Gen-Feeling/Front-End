@@ -9,7 +9,7 @@
           <div class="card-body text-center">
             <img src="{{ photo }}" width="250px" height="200px" class="card-profile-img" />
             <h3 class="mb-3">{{user.name}}</h3>
-            <button class="btn btn-dark mr-2 w-75 rounded-pill" data-toggle="modal" data-target="#novaPostagem">
+            <button class="btn enviar mr-2 w-75 rounded-pill" data-toggle="modal" data-target="#novaPostagem">
               Nova postagem
             </button>
           </div>
@@ -157,8 +157,8 @@
                         <div class="list-group card-list-group">
                           <div class="list-group-item py-5">
                             <div class="d-flex justify-content-end mb-2">
-                              <a class="text-primary mr-3" href="" [routerLink]="['/post-edit', post.id]">Editar</a>
-                              <a class="text-danger" href="" [routerLink]="['/post-delete', post.id]">Apagar</a>
+                              <button class= "editar mr-3 borda " href="" [routerLink]="['/post-edit', post.id]">Editar</button>
+                              <button class="deletar borda" href="" [routerLink]="['/post-delete', post.id]">Apagar</button>
                             </div>
                             <!-- Dropdown menu links -->
                             <div class="media">
@@ -214,7 +214,6 @@
                                     <small class="float-right">{{post.date | date: 'dd/MM/yyyy'}} às {{post.date | date:
 
                                         'HH:mm'}}</small>
-           
                         <h4>{{post.user.name}}</h4>
                                   </div>
                                   <div class="font-weight-bold font-mariele-b text-break">
